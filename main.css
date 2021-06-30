@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+.header1 {
+    text-align: center;
+    grid-area: header1;
+    background-color: #5eb399;
+}
+
+.nav {
+    text-align: center;
+    grid-area: nav;
+    background-color: #ffffff;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 2vw;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(34, 6, 6);
+    padding: 50px;
+}
+
+.nav li a:hover {
+    color: #25ccf7;
+}
+
+.group_emblem {
+    grid-area: main1;
+    background-color: #5eb399;
+    text-align: center;
+}
+
+.group_photo {
+    grid-area: main2;
+    background-color: #feca57;
+    text-align: center;
+}
+
+.brief_introduction {
+    grid-area: main3;
+    background-color:#48dbfb ;
+}
+
+.come_from {
+    grid-area: main4;
+    background-color: #2bcbba;
+}
+
+.contact_way {
+    grid-area: footer;
+    background-color: #5eb399;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 10vh 10vh 50vh 30vh 15vh;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "nav nav nav nav nav"
+    "main1 main1 main1 main1 main1"
+    "main2 main2 main2 main3 main4"
+    "footer footer footer footer footer";
+    justify-items: stretch;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+

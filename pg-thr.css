@@ -1,0 +1,75 @@
+body{
+    background-color: #ffffff;
+}
+
+#main div {
+    text-align: center;
+}
+#main {
+    display: grid;
+    grid-template-columns: repeat(10,17vh);
+    grid-template-rows: 10vh 10vh repeat(3,42vh);
+    grid-template-areas: 
+        "intro intro intro intro intro intro intro intro intro intro"
+        "hp hp mem mem mem-exp mem-exp ftr ftr prz prz"
+        "img-1 img-1 img-1 img-1 exp-1 exp-1 exp-1 exp-1 exp-1 exp-1"
+        "exp-2 exp-2 exp-2 exp-2 exp-2 exp-2 img-2 img-2 img-2 img-2";
+        justify-content: stretch;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+#intro {
+    grid-area: intro;
+    background-color: #5eb399;
+}
+#hp {
+    grid-area: hp;
+}
+
+#hp a{
+    text-decoration: none;
+    color: black;
+}
+#mem {
+    grid-area: mem;
+}
+#mem a{
+    text-decoration: none;
+    color: black;
+}
+#experience {
+    grid-area: mem-exp;
+}
+#experience {
+    text-decoration: none;
+    color: black;
+}
+#ftr {
+    grid-area: ftr;
+}
+#ftr a {
+    text-decoration: none;
+    color: black;
+}
+#prz {
+    grid-area: prz;
+}
+#prz a {
+    text-decoration: none;
+    color: black;
+}
+#img-1 {
+    grid-area: img-1;
+    
+}
+#exp-1 {
+    grid-area: exp-1;;
+    background-color: #5eb399;
+}
+#exp-2 {
+    grid-area: exp-2;  
+    background-color: #5eb399;  
+}
+#img-2 {
+    grid-area: img-2;
+}

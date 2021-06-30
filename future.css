@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding:0;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: blue;
+}
+
+.header1 {
+    text-align: center;
+    grid-area: header1;
+    background-color: #5eb399;
+}
+
+.nav {
+    text-align: center;
+    grid-area: nav;
+    background-color: #ffffff;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+    padding: 2vw;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: rgb(34, 6, 6);
+    padding: 6vw;
+}
+
+.plan2021 {
+    grid-area: main1;
+    background-color:#ffffff;
+}
+
+.plan2022 {
+    grid-area: main2;
+    background-color: #5eb399;
+}
+
+.plan2023 {
+    grid-area: main3;
+    background-color: #ffffff;
+}
+
+.plan2024 {
+    grid-area: main4;
+    background-color: #5eb399;
+}
+
+.plan2025 {
+    grid-area: main5;
+    background-color: #ffffff;
+}
+
+.explanation1 {
+    grid-area: main6;
+    background-color: #ffffff;
+}
+
+.explanation2 {
+    grid-area: main7;
+    background-color: #5eb399;
+}
+
+.explanation3 {
+    grid-area: main8;
+    background-color: #ffffff;
+}
+
+.explanation4 {
+    grid-area: main9;
+    background-color: #5eb399;
+}
+
+.explanation5 {
+    grid-area: main10;
+    background-color: #ffffff;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px 300px ;
+    grid-template-rows: 10vh 10vh 50vh 50vh;
+    grid-template-areas:
+    "header1 header1 header1 header1 header1"
+    "nav nav nav nav nav"
+    "main1 main2 main3 main4 main5"
+    "main6 main7 main8 main9 main10";
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}

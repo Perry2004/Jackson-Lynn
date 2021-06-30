@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.header1 {
+    text-align: center;
+    grid-area: header1;
+    background-color: #5eb399;
+}
+.nav {
+    text-align: center;
+    grid-area: nav;
+    background-color:white;
+}
+    
+.nav ul {
+    display: flex;
+}
+    
+.nav li {
+    list-style-type: none;
+    padding: 2vw;
+    margin-left: 200px;
+}
+    
+.nav li a {
+    text-decoration: none;
+    color: rgb(34, 6, 6);
+}
+
+.image-person1 {
+    grid-area: main1;
+    background-color: #5eb399;
+}  
+
+.image-person2 {
+    grid-area: main2;
+    background-color: antiquewhite;
+}
+
+.image-person3 {
+    grid-area: main3;
+    background-color: #5eb399;
+}
+
+.member1-name {
+    grid-area: main4;
+    background-color: antiquewhite;
+}
+
+.member2-name {
+    grid-area: main5;
+    background-color: #5eb399;
+}
+
+.member3-name {
+    grid-area: main6;
+    background-color:antiquewhite;
+}
+
+.Brief-introduction1 {
+    grid-area: main7;
+    background-color: #5eb399;
+}
+
+.Brief-introduction2 {
+    grid-area: main8;
+    background-color: antiqu
+}
+
+.br3 {
+    grid-area: main9;
+    background-color: #5eb399;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 400px 400px 600px;
+    grid-template-rows: 10vh 10vh 50vh 50vh 50vh;
+    grid-template-areas:
+    "header1 header1 header1"
+    "nav nav nav"
+    "main1 main4 main7"
+    "main2 main5 main8"
+    "main3 main6 main9";
+    justify-items: stretch;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
